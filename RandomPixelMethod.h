@@ -12,6 +12,7 @@ public:
 	
 private:
 	unsigned char findRandomNearbyValue(ColorAverageArea* currentArea, unsigned char*** colorArray, uint color);
+	void swapOneCellWithOneOther(uint row, uint col);
 };
 
 #endif

@@ -4,7 +4,7 @@ int main(){
 	std::string inputFilename = getInputImageName();
 	std::string outputFilename = getOutputImageName();
 
-	unsigned char radius = 3;
+	unsigned char radius = 10;
 	BlurryMethod* blurry = new RandomPixelMethod(radius);
 
 	blurry->setInputFilename(inputFilename);

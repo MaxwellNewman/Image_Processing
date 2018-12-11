@@ -14,6 +14,7 @@ public:
 	unsigned char findAverageColor(unsigned char*** colorArray);
 	void setColor(uint color);
 	unsigned char findRandomNearbyColor(unsigned char*** colorArray);
+	std::pair<uint,uint> selectRandomCell();
 
 private:
 	uint minimumRow;
@@ -29,7 +30,6 @@ private:
 	uint computeColorSum(unsigned char*** colorArray);
 	uint selectRandomRow();
 	uint selectRandomColumn();
-	std::pair<uint,uint> selectRandomCell();
 };
 
 #endif
