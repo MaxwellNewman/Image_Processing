@@ -10,10 +10,11 @@ public:
 	AreaAverageMethod(unsigned char colorRadius);
 	void makeBlurry();
 	void setColorRadius(unsigned char colorRadius);
-private:
+protected:
 	unsigned char colorRadius;
-	unsigned char findColorAverageOf(ColorAverageArea* currentArea, unsigned char*** colorArray, uint color);
+private:
 	void averageSingleCell(uint row, uint col);
+	unsigned char findColorAverageOf(ColorAverageArea* currentArea, unsigned char*** colorArray, uint color);
 };
 
 #endif

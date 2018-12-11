@@ -7,9 +7,10 @@ class RandomPixelMethod: public AreaAverageMethod{
 public:
 	RandomPixelMethod();
 	RandomPixelMethod(unsigned char colorRadius);
+	void makeBlurry();
+	void swapSingleCell(uint row, uint col);
 	
 private:
-	unsigned char findColorAverageOf(ColorAverageArea* currentArea, unsigned char*** colorArray, uint color);
 	unsigned char findRandomNearbyValue(ColorAverageArea* currentArea, unsigned char*** colorArray, uint color);
 };
 

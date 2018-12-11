@@ -62,15 +62,15 @@ std::pair<uint,uint> ColorAverageArea::selectRandomCell(){
 }
 
 uint ColorAverageArea::selectRandomRow(){
-	uint rowRange = (maximumRow - minimumCol);
-	uint randomRow = rand() % (rowRange) + minimumRow + 1;
+	uint rowRange = (maximumRow - minimumRow);
+	uint randomRow = rand() % (rowRange) + minimumRow;
 
 	return randomRow;
 }
 
 uint ColorAverageArea::selectRandomColumn(){
 	uint columnRange = (maximumCol - minimumCol);
-	uint randomColumn = rand() % (columnRange) + minimumCol + 1;
+	uint randomColumn = rand() % (columnRange) + minimumCol;
 	
 	return randomColumn;
 }
